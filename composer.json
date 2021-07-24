@@ -12,5 +12,11 @@
         "psr-4": {
             "Kozar\\AddCancelOrder\\\\": ""
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "Yarolsav Kozar",
+            "email": "kozar.yaroslav1@gmail.com"
+        }
+    ]
 }
