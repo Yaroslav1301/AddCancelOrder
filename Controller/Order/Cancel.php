@@ -52,7 +52,7 @@ class Cancel extends \Magento\Framework\App\Action\Action
         $stringId = $_REQUEST['id'];
         $comment = $_REQUEST['comment'];
         $reason = $_REQUEST['reason'];
-        $result = $this->orderRepository->get($id);
+        $result = $this->orderRepository->get($id-1);
         $result->cancel();
         $this->orderRepository->save($result);
         $this->insertMultiple($stringId, $reason, $comment, $id);
